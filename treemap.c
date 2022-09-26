@@ -155,7 +155,6 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 Pair * upperBound(TreeMap * tree, void* key) {
   tree->current=tree->root;
   TreeNode * aux = tree->current;
-  TreeNode * aux1 = tree->root;
   while (aux != NULL){
     if (is_equal(tree,key,aux->pair->key)==1){
       return aux->pair;
@@ -168,6 +167,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     }
     tree->current=aux;
   }
+  TreeNode * aux1 = aux->parent;
   while (aux1!=NULL){
     if (tree->lower_than(aux1->pair->key,key)!=1){
       tree->current=aux1;
