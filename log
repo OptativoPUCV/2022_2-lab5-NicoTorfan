@@ -3443,3 +3443,9 @@ treemap.c:172:17: error: ‘ub_node’ may be used uninitialized in this functio
 cc1: all warnings being treated as errors
 Compilation failed
 5d0045a
+Mon 26 Sep 2022 03:48:22 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  29|0
+total_score: 70/70
+bf10309

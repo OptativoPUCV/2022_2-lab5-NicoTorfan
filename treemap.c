@@ -155,7 +155,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 Pair * upperBound(TreeMap * tree, void* key) {
   tree->current=tree->root;
   TreeNode * aux = tree->current;
-  TreeNode * ub_node;
+  TreeNode * ub_node=(TreeNode *)malloc(sizeof(TreeNode));
   while (aux != NULL){
     if (is_equal(tree,key,aux->pair->key)==1){
       return aux->pair;
@@ -173,7 +173,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-  TreeNode * x = (TreeNode *)malloc(sizeof(TreeNode));;
+  TreeNode * x = (TreeNode *)malloc(sizeof(TreeNode));
   x = minimum(tree->root);
   return x->pair;
 }
