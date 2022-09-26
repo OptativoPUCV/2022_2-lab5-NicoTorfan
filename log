@@ -2753,3 +2753,9 @@ treemap.c:41:9: error: ‘TreeMap’ has no member named ‘lower_tha’; did yo
       |         lower_than
 Compilation failed
 0412684
+Mon 26 Sep 2022 12:04:00 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|7
+total_score: 5/70
+c301a7d
