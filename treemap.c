@@ -163,6 +163,11 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-  tree->current=tree->current->right;
+  if (tree->current->right!=NULL){
+    tree->current=tree->current->right;
+  }
+  else {
+    tree->current=tree->current->left;
+  }
   return tree->current->pair;
 }
