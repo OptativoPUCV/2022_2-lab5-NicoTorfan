@@ -166,6 +166,7 @@ Pair * nextTreeMap(TreeMap * tree) {
   if (tree->current->right!=NULL){
     tree->current=tree->current->right;
   }
+  else if(tree->current==tree->root) tree->current=tree->root->right;
   else {
     tree->current=tree->current->left;
   }
