@@ -163,7 +163,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-  if (tree->current->right!=NULL){
+  if (tree->current->right->right!=NULL){
     tree->current=minimum(tree->current);
   }
   else tree->current=tree->current->right;
