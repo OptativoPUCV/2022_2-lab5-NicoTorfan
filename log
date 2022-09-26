@@ -2937,3 +2937,9 @@ Mon 26 Sep 2022 12:43:51 AM UTC:
  1 file changed, 1 insertion(+)
  tests:  0|0
 0bee5a7
+Mon 26 Sep 2022 12:44:57 AM UTC: 
+ treemap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  6|7
+total_score: 5/70
+7217810
