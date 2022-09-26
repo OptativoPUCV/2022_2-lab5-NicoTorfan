@@ -3036,3 +3036,9 @@ treemap.c:68:12: error: ‘left’ undeclared (first use in this function)
 treemap.c:68:12: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 f02415c
+Mon 26 Sep 2022 01:52:17 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|5
+total_score: 15/70
+93e023c
