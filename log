@@ -2909,3 +2909,9 @@ treemap.c:87:25: error: ‘TreeMap’ has no member named ‘aux’
       |                         ^~
 Compilation failed
 7601b78
+Mon 26 Sep 2022 12:40:11 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|7
+total_score: 5/70
+720cd63
