@@ -3146,3 +3146,14 @@ treemap.c:162:12: error: returning ‘TreeNode *’ from a function with incompa
 cc1: all warnings being treated as errors
 Compilation failed
 c2cf55e
+Mon 26 Sep 2022 02:24:09 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:162:12: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+  162 |     return x;
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+5074e6e
