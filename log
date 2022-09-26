@@ -3348,3 +3348,19 @@ Mon 26 Sep 2022 03:20:20 AM UTC:
  tests:  26|1
 total_score: 60/70
 e04a3cb
+Mon 26 Sep 2022 03:25:24 AM UTC: 
+ treemap.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:172:54: error: too few arguments to function ‘is_equal’
+  172 |   if (tree->lower_than(key,ub_node->pair->key)==1 || is_equal(key,ub_node->pair->key)==1){
+      |                                                      ^~~~~~~~
+treemap.c:22:5: note: declared here
+   22 | int is_equal(TreeMap* tree, void* key1, void* key2){
+      |     ^~~~~~~~
+treemap.c:175:14: error: expected ‘;’ before ‘:’ token
+  175 |   return NULL:
+      |              ^
+Compilation failed
+3042863
