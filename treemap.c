@@ -169,10 +169,10 @@ Pair * upperBound(TreeMap * tree, void* key) {
     ub_node=aux->parent;
     tree->current=aux;
   }
-  if (tree->lower_than(key,ub_node->pair->key)==1 || is_equal(tree,key,ub_node->pair->key)==1){
-    return ub_node->pair;
+  while(tree->lower_than(ub_node->pair->key,key)==1){
+    ub_node=ub_node->parent;
   }
- return ub_node->pair;
+  return ub_node->pair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
