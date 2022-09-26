@@ -2949,3 +2949,14 @@ Mon 26 Sep 2022 12:49:22 AM UTC:
  tests:  11|6
 total_score: 15/70
 6508249
+Mon 26 Sep 2022 01:03:11 AM UTC: 
+ treemap.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+test.c: In function ‘insertTreeMap’:
+treemap.c:50:13: error: ‘aux’ is used uninitialized in this function [-Werror=uninitialized]
+   50 |   aux->pair = searchTreeMap(tree,key);
+      |   ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8abe786
