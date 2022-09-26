@@ -3432,3 +3432,14 @@ Mon 26 Sep 2022 03:47:13 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 1e07655
+Mon 26 Sep 2022 03:47:49 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:172:17: error: ‘ub_node’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  172 |   return ub_node->pair;
+      |          ~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5d0045a
